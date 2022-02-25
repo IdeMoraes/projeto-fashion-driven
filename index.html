@@ -1,14 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fashion Driven</title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="stylesheet.css"/>
-</head>
-<body>
-    <script src="scripts.js"></script> 
-</body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="imagens/logo.png" alt="Logo da Fashion Driven" />
+      <h1>FashionDriven</h1>
+    </header>
+    <main>
+      <article class="montar-pedido">
+        <section class="escolher-modelo">
+          <h3>Escolha o modelo</h3>
+          <div class="modelos">
+            <figure>
+              <div class="modelo t-shirt" onclick="escolherModelo(this)">
+                <img src="imagens/tshirt.png" alt="T-shirt" />
+              </div>
+              <figcaption>T-shirt</figcaption>
+            </figure>
+            <figure>
+              <div class="modelo top-tank" onclick="escolherModelo(this)">
+                <img src="imagens/tank-top.png" alt="Camiseta" />
+              </div>
+              <figcaption>Camiseta</figcaption>
+            </figure>
+            <figure>
+              <div class="modelo long" onclick="escolherModelo(this)">
+                <img src="imagens/long-sleeves.png" alt="Manga longa" />
+              </div>
+              <figcaption>Manga longa</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="escolher-gola">
+          <h3>Escolha a gola</h3>
+          <div class="golas">
+            <figure>
+              <div class="gola v-neck" onclick="escolherGola(this)">
+                <img src="imagens/v-neck.png" alt="Gola V" />
+              </div>
+              <figcaption>Gola V</figcaption>
+            </figure>
+            <figure>
+              <div class="gola round" onclick="escolherGola(this)">
+                <img src="imagens/shirt.png" alt="Gola Redonda" />
+              </div>
+              <figcaption>Gola Redonda</figcaption>
+            </figure>
+            <figure>
+              <div class="gola polo" onclick="escolherGola(this)">
+                <img src="imagens/polo-shirt.png" alt="Gola polo" />
+              </div>
+              <figcaption>Gola polo</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="escolher-tecido">
+          <h3>Escolha o tecido</h3>
+          <div class="tecidos">
+            <figure>
+              <div class="tecido seda" onclick="escolherTecido(this)">
+                <img src="imagens/silk.png" alt="Seda" />
+              </div>
+              <figcaption>Seda</figcaption>
+            </figure>
+            <figure>
+              <div class="tecido algodao" onclick="escolherTecido(this)">
+                <img src="imagens/organic-cotton.png" alt="Algodão" />
+              </div>
+              <figcaption>Algodão</figcaption>
+            </figure>
+            <figure>
+              <div class="tecido poliester" onclick="escolherTecido(this)">
+                <img src="imagens/quimica.png" alt="Poliéster" />
+              </div>
+              <figcaption>Poliéster</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="imagem-de-referencia">
+          <label for="input1">
+            Imagem de referência
+          </label>
+          <input
+            id="input-imagem"
+            placeholder="Insira o link"
+            onchange="inserirImagem()"
+          />
+        </section>
+        <button onclick="confirmarPedido()">Confirmar pedido</button>
+      </article>
+      <div class="ilustracao">
+        <img src="imagens/ilustraçãoX.png" alt="Croqui de moda feminino" />
+      </div>
+    </main>
+    <footer>
+      <h2>Ultimos pedidos</h2>
+      <div class="pedidos">
+        <div class="pedido">
+          <img />
+          <p></p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
 </html>
