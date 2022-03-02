@@ -1,103 +1,156 @@
 body {
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  header {
-    background-color: #404eed;
-    display: flex;
-    align-items: center;
-    width: 1366px;
-  }
-  .logo {
-    margin-left: 80.04px;
-    margin-right: 16px;
-  }
-  h1 {
-    font-family: "New Rocker", cursive;
-    font-size: 32px;
-    color: #fcfcfc;
-  }
-  .ilustracao {
-    background-color: #404eed;
-    width: 670.49px;
-    height: 785px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .ilustracao img {
-    width: 607px;
-    height: 702px;
-  }
-  label {
-    display: block;
-    font-size: 18px;
-    color: #232323;
-  }
-  input {
-    width: 396.27px;
-    height: 40px;
-    background: #f2f2f2;
-    border-radius: 10px;
-    margin-top: 9.27px;
-  }
-  main {
-    display: flex;
-  }
-  .montar-pedido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 695.51px;
-    padding-top: 38.32px;
-  }
-  .montar-pedido section {
-    width: 385px;
-  }
-  .montar-pedido figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer {
-    background-color: #f2f2f2;
-    width: 1366px;
-    height: 342px;
-  }
-  .modelos,
-  .golas,
-  .tecidos {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8.58px;
-    margin-bottom: 31.12px;
-  }
-  .modelos div,
-  .golas div,
-  .tecidos div {
-    width: 100px;
-    height: 100px;
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8.3px;
-  }
-  .montar-pedido h3,
-  .montar-pedido figcaption {
-    font-size: 18px;
-    color: #232323;
-  }
-  .selecionado {
-    border-width: 3px;
-    border-style: solid;
-    border-color: #404eed;
-  }
-  .liberado {
-    background-color: #404eed;
-  }
-  
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+header {
+  background-color: #404eed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header section {
+  display: flex;
+  width: 1100px;
+  align-items: center;
+}
+.logo {
+  margin-right: 16px;
+}
+h1 {
+  font-family: "New Rocker", cursive;
+  font-size: 32px;
+  color: #fcfcfc;
+}
+.ilustracao {
+  background-color: #404eed;
+  width: 670.49px;
+  height: 785px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ilustracao img {
+  width: 607px;
+  height: 702px;
+}
+label {
+  display: block;
+  font-size: 18px;
+  color: #232323;
+}
+input {
+  width: 396.27px;
+  height: 40px;
+  background: #f2f2f2;
+  border-radius: 10px;
+  margin-top: 9.27px;
+}
+main {
+  display: flex;
+}
+.montar-pedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 695.51px;
+  padding-top: 38.32px;
+}
+.montar-pedido section {
+  width: 385px;
+}
+.montar-pedido figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modelos,
+.golas,
+.tecidos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8.58px;
+  margin-bottom: 31.12px;
+}
+.modelos div,
+.golas div,
+.tecidos div {
+  width: 100px;
+  height: 100px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8.3px;
+}
+.montar-pedido h3,
+.montar-pedido figcaption {
+  font-size: 18px;
+  color: #232323;
+}
+.selecionado {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #404eed;
+}
+.liberado {
+  background-color: #404eed;
+}
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 342px;
+  display: flex;
+  justify-content: center;
+}
+footer h2 {
+  color: #232323;
+  font-size: 24px;
+  margin-top: 30.57px;
+}
+footer section {
+  width: 998px;
+}
+.pedidos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 20px;
+  height: 236.47px;
+  width: 998px;
+}
+.pedido {
+  background-color: white;
+  border-radius: 10px;
+  width: 201.69px;
+  height: 236.47px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pedido img {
+  width: 180px;
+  height: 180px;
+  margin-top: 16.22px;
+  margin-bottom: 7.94px;
+}
+b {
+  font-weight: bold;
+}
+button {
+  width: 398.61px;
+  height: 40px;
+  margin-top: 23.76px;
+  background-color: #c4c4c4;
+  color: #fcfcfc;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 15px;
+}

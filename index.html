@@ -21,8 +21,10 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="imagens/logo.png" alt="Logo da Fashion Driven" />
-      <h1>FashionDriven</h1>
+      <section>
+        <img class="logo" src="imagens/logo.png" alt="Logo da Fashion Driven" />
+        <h1>FashionDriven</h1>
+      </section>
     </header>
     <main>
       <article class="montar-pedido">
@@ -76,19 +78,19 @@
           <h3>Escolha o tecido</h3>
           <div class="tecidos">
             <figure>
-              <div class="tecido seda" onclick="escolherTecido(this)">
+              <div class="tecido silk" onclick="escolherTecido(this)">
                 <img src="imagens/silk.png" alt="Seda" />
               </div>
               <figcaption>Seda</figcaption>
             </figure>
             <figure>
-              <div class="tecido algodao" onclick="escolherTecido(this)">
+              <div class="tecido cotton" onclick="escolherTecido(this)">
                 <img src="imagens/organic-cotton.png" alt="Algodão" />
               </div>
               <figcaption>Algodão</figcaption>
             </figure>
             <figure>
-              <div class="tecido poliester" onclick="escolherTecido(this)">
+              <div class="tecido polyester" onclick="escolherTecido(this)">
                 <img src="imagens/quimica.png" alt="Poliéster" />
               </div>
               <figcaption>Poliéster</figcaption>
@@ -108,19 +110,18 @@
         <button onclick="confirmarPedido()">Confirmar pedido</button>
       </article>
       <div class="ilustracao">
-        <img src="imagens/ilustraçãoX.png" alt="Croqui de moda feminino" />
+        <img src="imagens/ilustração.png" alt="Croqui de moda feminino" />
       </div>
     </main>
     <footer>
-      <h2>Ultimos pedidos</h2>
-      <div class="pedidos">
-        <div class="pedido">
-          <img />
-          <p></p>
-        </div>
-      </div>
+      <section>
+        <h2>Ultimos pedidos</h2>
+        <div class="pedidos"></div>
+      </section>
     </footer>
-    <script src="scripts.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
